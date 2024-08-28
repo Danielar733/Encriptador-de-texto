@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    background: #E5E5E5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #E5E5E5;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra los elementos en pantallas grandes */
+    gap: 2rem; /* Espacio pequeño entre los elementos */
+    margin: 6rem;
+}
+
+textarea {
+    color: #0A3871;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px; /* Limitar el ancho máximo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.area_texto {
+    text-transform: lowercase;
+    margin-top: 2rem;
+}
+
+.area_texto:focus,
+.mensaje_encriptado:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0A3871;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.mensaje_encriptado {
+    background: white url("/img/Muñeco.png") no-repeat center;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    max-width: 500px; /* Limitar el ancho máximo */
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.boton_Encriptar,
+.boton_desencriptar,
+.copiar_texto {
+    border-radius: 24px;
+    cursor: pointer;
+    height: 3rem;
+    border: 1px solid #0A3871;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.boton_Encriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.boton_desencriptar {
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+.copiar_texto {
+    background-color: #007bff;
+    color: white;
+}
+
+.presentacion_texto {
+    color: #495057;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos en pantallas pequeñas */
+        gap: 1rem; /* Espacio pequeño entre los elementos */
+    }
+
+    .area_texto,
+    .mensaje_encriptado,
+    .boton_Encriptar,
+    .boton_desencriptar,
+    .copiar_texto {
+        font-size: 0.875rem;
+        width: 100%;
+        max-width: none; /* Elimina el ancho máximo */
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .boton_Encriptar,
+    .boton_desencriptar,
+    .copiar_texto {
+        width: 100%;
+        height: auto;
+    }
+
+    .presentacion_texto {
+        text-align: center;
+    }
+}
+
+
+
+
