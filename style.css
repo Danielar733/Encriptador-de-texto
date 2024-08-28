@@ -100,6 +100,12 @@ textarea {
     margin-top: 1rem;
 }
 
+.footer{
+    padding:1.5rem;
+    text-align: center;
+    font-family:  "Inter", sans-serif ;
+}
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
     main {
